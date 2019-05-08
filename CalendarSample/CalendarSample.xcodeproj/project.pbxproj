@@ -14,6 +14,11 @@
 		64767E30228314DA009905D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64767E2E228314DA009905D6 /* LaunchScreen.storyboard */; };
 		64767E3B228314DA009905D6 /* CalendarSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64767E3A228314DA009905D6 /* CalendarSampleTests.swift */; };
 		64767E46228314DA009905D6 /* CalendarSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64767E45228314DA009905D6 /* CalendarSampleUITests.swift */; };
+		64767E572283269E009905D6 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64767E562283269E009905D6 /* RxCocoa.framework */; };
+		64767E59228326AF009905D6 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64767E58228326AF009905D6 /* RxRelay.framework */; };
+		64767E5B228326C0009905D6 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64767E5A228326C0009905D6 /* RxSwift.framework */; };
+		64767E5F22832D1D009905D6 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64767E5C228326D0009905D6 /* RxTest.framework */; };
+		64767E6022832D23009905D6 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64767E542283268E009905D6 /* RxBlocking.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		64767E41228314DA009905D6 /* CalendarSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64767E45228314DA009905D6 /* CalendarSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSampleUITests.swift; sourceTree = "<group>"; };
 		64767E47228314DA009905D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64767E542283268E009905D6 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		64767E562283269E009905D6 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		64767E58228326AF009905D6 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		64767E5A228326C0009905D6 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		64767E5C228326D0009905D6 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64767E5B228326C0009905D6 /* RxSwift.framework in Frameworks */,
+				64767E59228326AF009905D6 /* RxRelay.framework in Frameworks */,
+				64767E572283269E009905D6 /* RxCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64767E6022832D23009905D6 /* RxBlocking.framework in Frameworks */,
+				64767E5F22832D1D009905D6 /* RxTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,7 @@
 				64767E39228314DA009905D6 /* CalendarSampleTests */,
 				64767E44228314DA009905D6 /* CalendarSampleUITests */,
 				64767E23228314D9009905D6 /* Products */,
+				64767E532283268E009905D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +141,18 @@
 			path = CalendarSampleUITests;
 			sourceTree = "<group>";
 		};
+		64767E532283268E009905D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64767E5C228326D0009905D6 /* RxTest.framework */,
+				64767E5A228326C0009905D6 /* RxSwift.framework */,
+				64767E58228326AF009905D6 /* RxRelay.framework */,
+				64767E562283269E009905D6 /* RxCocoa.framework */,
+				64767E542283268E009905D6 /* RxBlocking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +163,7 @@
 				64767E1E228314D8009905D6 /* Sources */,
 				64767E1F228314D8009905D6 /* Frameworks */,
 				64767E20228314D8009905D6 /* Resources */,
+				64767E5E228326EF009905D6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -152,6 +181,7 @@
 				64767E32228314DA009905D6 /* Sources */,
 				64767E33228314DA009905D6 /* Frameworks */,
 				64767E34228314DA009905D6 /* Resources */,
+				64767E6122832D2E009905D6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -250,6 +280,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64767E5E228326EF009905D6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		64767E6122832D2E009905D6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		64767E1E228314D8009905D6 /* Sources */ = {
@@ -434,6 +506,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CalendarSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +528,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CalendarSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -470,6 +550,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CalendarSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -490,6 +574,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CalendarSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
